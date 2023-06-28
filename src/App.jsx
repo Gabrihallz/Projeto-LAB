@@ -18,7 +18,10 @@ function App() {
   return(
     <div className="app">
       <div className="container">
+        <ul>
         <List user={user}/>
+        </ul>
+
       </div>
     </div>
   );

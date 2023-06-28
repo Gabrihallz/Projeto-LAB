@@ -3,13 +3,20 @@ import React from 'react'
 const List = ({user}) => {
   return (
     <div>
-        <ul>
-          {user?.map((item)=> {
-            <li key={item.codigo}>
-              <h1>Nome social = {item.nomeSocial}</h1>
-            </li>
-          })}
-        </ul>
+      {user?.map((item) => (
+        <li key={item.codigo}>
+          == {item.nomeCompleto}
+          == {item.nomeSocial}
+          == {item.sexo}
+          == {item.dataNascimento}
+          == {item.email}
+          == {item.estado}
+          == {item.municipio}
+          == {item.numeroDeAcessos}
+          == {item.situacao}
+          == {item.dataDeVinculo}
+        </li>
+      ))}
     </div>
   )
 }
