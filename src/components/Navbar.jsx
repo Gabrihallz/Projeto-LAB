@@ -1,16 +1,11 @@
 import React from 'react'
 import './Navbar.css'
-import { Link } from 'react-router-dom'
 
 const Navbar = () => {
   return (
     <nav className="navbar">
-        <h2>
-            (logo + menu de busca)
-        </h2>
-        <h1>
-            (botão de busca)
-        </h1>
+        <img src="./src/assets/marca_ufg.svg" alt="logo" height="70px" />
+        <h1>Botão de busca</h1>
     </nav>
   )
 }
