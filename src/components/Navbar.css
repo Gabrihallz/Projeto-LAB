@@ -6,3 +6,19 @@
     color:antiquewhite;
     padding: 0 2rem;
 }
+
+.divSearch{
+    display: flex;
+    flex-direction: line;
+    gap: 5px;
+    font-size: 19px;
+}
+
+label{
+    margin-top: 2px;
+}
+
+input{
+    padding: 5px;
+}
+

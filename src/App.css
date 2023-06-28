@@ -1,6 +1,7 @@
-.container{
-    max-width: 1300px;
-    margin: 2rem auto;
-    padding: 0 2rem;
-    display: flex;
+.container{ 
+    width: 100%;
+    max-width: 1300;
+    margin: 56px auto;
+    padding: 0 24px;
+    align-items: center;
 }
