@@ -1,7 +1,9 @@
-import './App.css'
 import { useEffect, useState } from 'react';
+import { createBrowserRouter, RouterProvider, Route } from 'react-router-dom';
 import api from './Services/api';
 import List from './components/List'
+import './App.css'
+import Navbar from "./components/Navbar"
 
 function App() {
   const [user, setUser] = useState();
@@ -17,6 +19,7 @@ function App() {
 
   return(
     <div className="app">
+      <Navbar />
       <div className="container">
         <ul>
         <List user={user}/>
