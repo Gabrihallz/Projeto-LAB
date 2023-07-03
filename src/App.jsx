@@ -1,34 +1,31 @@
-import { useEffect, useState } from 'react';
-import { createBrowserRouter, RouterProvider, Route } from 'react-router-dom';
-import api from './Services/api';
-import List from './components/List'
-import './App.css'
-import Navbar from "./components/Navbar"
+import { useEffect, useState } from "react";
+import api from "./Services/api";
+import List from "./components/List";
+import "./App.css";
+import Navbar from "./components/Navbar";
 
-function App() {
+export default function App() {
   const [user, setUser] = useState();
+  const [busca, setBusca] = useState("");
 
   useEffect(() => {
+    const params = { filtro: busca };
     api
-      .get("/selecao-2023/usuarios")
+      .get("/selecao-2023/usuarios", { params: params })
       .then((response) => setUser(response.data))
       .catch((err) => {
         console.error("Houve um erro!" + err);
       });
-  }, []);
+  }, [busca]); //useEffect está atualizando sempre que buscar e quando iniciar.
 
-  return(
+  return (
     <div className="app">
-      <Navbar />
+      <Navbar busca={busca} setBusca={setBusca} />
       <div className="container">
         <ul>
-        <List user={user}/>
+          <List user={user} />
         </ul>
-
       </div>
     </div>
   );
-
-};
-
-export default App
+}

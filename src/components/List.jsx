@@ -5,16 +5,16 @@ const List = ({user}) => {
     <div>
       {user?.map((item) => (
         <li key={item.codigo}>
-          // {item.nomeCompleto}
-          // {item.nomeSocial}
-          // {item.sexo}
-          // {item.dataNascimento}
-          // {item.email}
-          // {item.estado}
-          // {item.municipio}
-          // {item.numeroDeAcessos}
-          //  {item.situacao}
-          //  {item.dataDeVinculo}
+          ---- {item.nomeCompleto}
+          ---- {item.nomeSocial}
+          ---- {item.sexo}
+          ---- {item.dataNascimento}
+          ---- {item.email}
+          ---- {item.estado}
+          ---- {item.municipio}
+          ---- {item.numeroDeAcessos}
+          ---- {item.situacao}
+          ---- {item.dataDeVinculo}
         </li>
       ))}
     </div>
