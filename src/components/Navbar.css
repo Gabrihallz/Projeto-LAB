@@ -7,19 +7,24 @@
     padding: 0 2rem;
 }
 
-.divSearch{
-    display: flex;
-    flex-direction: line;
-    gap: 5px;
-    font-size: 19px;
+#divBusca{
+    background-color:#182727;
+    border:solid 1px;
+    border-radius:15px;
+    width:300px;
 }
 
-label{
-    margin-top: 2px;
-}
-
-input{
-    padding: 5px;
+#txtBusca{
+    float:left;
+    background-color:#6496a1;
+    padding-left:5px;
+    font-style:italic;
+    font-size:18px;
+    border:none;
+    height:32px;
+    width:260px;
+    border: solid 1px #24444b;
+    border-radius: 9px;
 }
 
 

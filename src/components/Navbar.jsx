@@ -6,10 +6,11 @@ const Navbar = ({ busca, setBusca }) => {
   return (
     <nav className="navbar">
       <img src="./src/assets/marca_ufg.svg" alt="logo" height="70px" />
-      <div className="divSearch">
-        <label For="search">Pesquisar:</label>
+      <div className="divBusca">
         <input
           type="text"
+          id="txtBusca"
+          placeholder="Buscar..."
           value={busca}
           onChange={(ev) => setBusca(ev.target.value)}
         />
