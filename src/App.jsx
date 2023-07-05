@@ -3,6 +3,7 @@ import api from "./Services/api";
 import List from "./components/List";
 import "./App.css";
 import Navbar from "./components/Navbar";
+import Tabela from "./components/Tabela";
 
 export default function App() {
   const [user, setUser] = useState();
@@ -22,9 +23,7 @@ export default function App() {
     <div className="app">
       <Navbar busca={busca} setBusca={setBusca} />
       <div className="container">
-        <ul>
-          <List user={user} />
-        </ul>
+        <Tabela />
       </div>
     </div>
   );
